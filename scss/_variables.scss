@@ -5,17 +5,17 @@
 
 // Color system
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$white:    #fff !default; // livestrap: change
+$gray-100: #f1f1f2 !default; // livestrap: change
+$gray-200: #e4e4e6 !default; // livestrap: change
+$gray-300: #d6d7da !default; // livestrap: change
+$gray-400: #c9c9ce !default; // livestrap: change
+$gray-500: #a5a6ab !default; // livestrap: change
+$gray-600: #848589 !default; // livestrap: change
+$gray-700: #636467 !default; // livestrap: change
+$gray-800: #535356 !default; // livestrap: change
+$gray-900: #424345 !default; // livestrap: change
+$black:    #000 !default; // livestrap: change
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -34,16 +34,16 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue:    #0086c7 !default; // livestrap: change
+$indigo:  #8d6a9f !default; // livestrap: change
+$purple:  #54457f !default; // livestrap: change
+$pink:    #ef7674 !default; // livestrap: change
+$red:     #d7263d !default; // livestrap: change
+$orange:  #fb6107 !default; // livestrap: change
+$yellow:  #ffbe0b !default; // livestrap: change
+$green:   #3da604 !default; // livestrap: change
+$teal:    #05a8aa !default; // livestrap: change
+$cyan:    #bce7fd !default; // livestrap: change
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -67,7 +67,7 @@ $colors: map-merge(
 );
 
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     #00aef2 !default; // livestrap: change
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -108,7 +108,7 @@ $yiq-text-light:            $white !default;
 
 $enable-caret:                                true !default;
 $enable-rounded:                              true !default;
-$enable-shadows:                              false !default;
+$enable-shadows:                              true !default; // livestrap: change
 $enable-gradients:                            false !default;
 $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;
@@ -169,9 +169,9 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              $secondary !default; // livestrap: change
 $link-decoration:                         none !default;
-$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-color:                        $primary !default; // livestrap: change
 $link-hover-decoration:                   underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
@@ -232,9 +232,9 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               .6rem !default; // livestrap: change
+$border-radius-lg:            1rem !default; // livestrap: change
+$border-radius-sm:            1.2rem !default; // livestrap: change
 
 $rounded-pill:                50rem !default;
 
@@ -270,7 +270,7 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Nunito Sans", "Avenir", "Calibri", sans-serif !default; // livestrap: change
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -344,8 +344,8 @@ $hr-margin-y:                 $spacer !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem !default;
-$table-cell-padding-sm:       .3rem !default;
+$table-cell-padding:          1rem !default; // livestrap: change
+$table-cell-padding-sm:       .4rem !default; // livestrap: change
 
 $table-color:                 $body-color !default;
 $table-bg:                    null !default;
@@ -380,23 +380,23 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         0.7rem !default; // livestrap: change
+$input-btn-padding-x:         1.2rem !default; // livestrap: change
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
 
-$input-btn-focus-width:       .2rem !default;
-$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-width:       0.05rem !default; // livestrap: change
+$input-btn-focus-color:       $primary !default; // livestrap: change
+$input-btn-focus-box-shadow:  0 !default; // livestrap: change
 
-$input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-y-sm:      0.6rem !default; // livestrap: change
+$input-btn-padding-x-sm:      0.9rem !default; // livestrap: change
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-lg:      0.8rem !default; // livestrap: change
+$input-btn-padding-x-lg:      1.3rem !default; // livestrap: change
 $input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
@@ -425,8 +425,8 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-normal !default;
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-font-weight:             $font-weight-bold !default; // livestrap: change
+$btn-box-shadow:              0px 2px 5px rgba($gray-800, 0.25) !default; // livestrap: change
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity:        .65 !default;
@@ -511,7 +511,7 @@ $form-grid-gutter-width:                10px !default;
 $form-group-margin-bottom:              1rem !default;
 
 $input-group-addon-color:               $input-color !default;
-$input-group-addon-bg:                  $gray-200 !default;
+$input-group-addon-bg:                  $gray-100 !default; // livestrap: change
 $input-group-addon-border-color:        $input-border-color !default;
 
 $custom-forms-transition:               background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
@@ -690,13 +690,13 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
-$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-color:             $primary !default; // livestrap: change
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
 $nav-tabs-link-active-color:        $gray-700 !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-border-color: $primary $primary $nav-tabs-link-active-bg; // livestrap: change
 
 $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
@@ -812,13 +812,13 @@ $pagination-disabled-border-color:  $gray-300 !default;
 
 $jumbotron-padding:                 2rem !default;
 $jumbotron-color:                   null !default;
-$jumbotron-bg:                      $gray-200 !default;
+$jumbotron-bg:                      $gray-100 !default; // livestrap: change
 
 
 // Cards
 
 $card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-x:                     1.5rem !default; // livestrap: change
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
@@ -846,12 +846,12 @@ $tooltip-color:                     $white !default;
 $tooltip-bg:                        $black !default;
 $tooltip-border-radius:             $border-radius !default;
 $tooltip-opacity:                   .9 !default;
-$tooltip-padding-y:                 .25rem !default;
-$tooltip-padding-x:                 .5rem !default;
+$tooltip-padding-y:                 .4rem !default; // livestrap: change
+$tooltip-padding-x:                 .8rem !default; // livestrap: change
 $tooltip-margin:                    0 !default;
 
 $tooltip-arrow-width:               .8rem !default;
-$tooltip-arrow-height:              .4rem !default;
+$tooltip-arrow-height:              .6rem !default; // livestrap: change
 $tooltip-arrow-color:               $tooltip-bg !default;
 
 // Form tooltips must come after regular tooltips
@@ -902,7 +902,7 @@ $toast-border-color:                rgba(0, 0, 0, .1) !default;
 $toast-border-radius:               .25rem !default;
 $toast-box-shadow:                  0 .25rem .75rem rgba($black, .1) !default;
 
-$toast-header-color:                $gray-600 !default;
+$toast-header-color:                $primary !default; // livestrap: change
 $toast-header-background-color:     rgba($white, .85) !default;
 $toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 
@@ -938,9 +938,9 @@ $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .2) !default;
 $modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
-$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
-$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
+$modal-content-border-radius:       $border-radius-sm !default; // livestrap: change
+$modal-content-box-shadow-xs:       0 !default; // livestrap: change
+$modal-content-box-shadow-sm-up:    0 !default; // livestrap: change
 
 $modal-backdrop-bg:                 $black !default;
 $modal-backdrop-opacity:            .5 !default;
@@ -966,14 +966,14 @@ $modal-transition:                  transform .3s ease-out !default;
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding-y:                   .75rem !default;
+$alert-padding-y:                   1.25rem !default; // livestrap: change
 $alert-padding-x:                   1.25rem !default;
 $alert-margin-bottom:               1rem !default;
-$alert-border-radius:               $border-radius !default;
+$alert-border-radius:               0 !default; // livestrap: change
 $alert-link-font-weight:            $font-weight-bold !default;
-$alert-border-width:                $border-width !default;
+$alert-border-width:                0 !default; // livestrap: change
 
-$alert-bg-level:                    -10 !default;
+$alert-bg-level:                    -3 !default; // livestrap: change
 $alert-border-level:                -9 !default;
 $alert-color-level:                 6 !default;
 
@@ -1004,7 +1004,7 @@ $list-group-item-padding-x:         1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+$list-group-active-bg:              $secondary !default; // livestrap: change
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
