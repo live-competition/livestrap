@@ -17,7 +17,7 @@ Also used Argon Dashboard Navbar - v1.0.0 by Creative Tim
 
 */
 
-// Boostrap + Custom Variables
+// Boostrap w/ Customized Variables
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
@@ -63,3 +63,7 @@ Also used Argon Dashboard Navbar - v1.0.0 by Creative Tim
 @import "argon/navbars/navbar-search";
 @import "argon/navbars/navbar-dropdown";
 @import "argon/navbars/navbar-collapse";
+
+// Custom
+@import "custom/variables";
+@import "custom/text";
